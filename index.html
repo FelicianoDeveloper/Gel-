@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta
+      name="description"
+      content="Gelô — sorvetes cremosos, combinações autorais e momentos mais doces. Escolha seus sabores e peça pelo WhatsApp."
+    />
+    <title>Gelô — um momento mais doce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="/src/site.css" />
+  </head>
+  <body class="bg-cream text-ink antialiased">
+    <div class="announcement">
+      Uma pausa gelada deixa qualquer dia melhor
+      <span aria-hidden="true">✳</span> Peça o seu!
+    </div>
+    <header id="header" class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="Gelô, início"
+          ><span class="brand-mark">g<span>•</span></span
+          ><span>gelô<span class="brand-period">.</span></span></a
+        >
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span>
+        </button>
+        <nav id="nav-links" class="nav-links" aria-label="Navegação principal">
+          <a href="#sabores">Sabores</a><a href="#experiencia">Nossa essência</a
+          ><a href="#visite">Visite a gente</a>
+          <a href="#sabores" class="nav-cta">Escolher sorvete <span>↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> FEITO PARA ALEGRAR SEU DIA
+            </p>
+            <h1>Seu dia merece<br />um pouco mais de <em>doçura.</em></h1>
+            <p class="hero-description">
+              Sorvetes cremosos, ingredientes que dão vontade de repetir e
+              combinações que transformam uma pausa simples em um momento
+              especial.
+            </p>
+            <div class="hero-actions">
+              <a href="#sabores" class="button button-dark"
+                >Descobrir sabores <span>↗</span></a
+              ><a href="#experiencia" class="text-link"
+                >Conheça a Gelô <span>↓</span></a
+              >
+            </div>
+            <div class="hero-note">
+              <div class="avatar-stack">
+                <span>🍓</span><span>🍦</span><span>🍫</span>
+              </div>
+              <p>
+                <strong>Feito para compartilhar.</strong><br />Ou aproveitar só
+                pra você.
+              </p>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-photo-frame">
+              <img
+                src="https://images.unsplash.com/photo-1560008581-09826d1de69e?auto=format&fit=crop&w=1200&q=88"
+                alt="Sorvete artesanal servido em casquinha"
+                fetchpriority="high"
+              /><span class="photo-label">um sabor de felicidade</span>
+            </div>
+            <div class="hero-sticker">
+              <span>feito com</span><strong>amor</strong
+              ><span>em cada colherada ✳</span>
+            </div>
+            <div class="hero-orbit orbit-one"></div>
+            <div class="hero-orbit orbit-two"></div>
+            <span class="float-spark spark-one">✳</span
+            ><span class="float-spark spark-two">✦</span>
+          </div>
+        </div>
+        <div class="hero-bottom container">
+          <span>GELADO NA MEDIDA</span><span class="hero-bottom-line"></span
+          ><span>LEVEZA EM CADA SABOR</span
+          ><span class="hero-bottom-line"></span
+          ><span>FELICIDADE DE VERDADE</span>
+        </div>
+      </section>
+
+      <section id="sabores" class="flavors-section section-pad">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="eyebrow-dot"></span> NOSSO CARDÁPIO
+              </p>
+              <h2>Qual vai ser o seu<br /><em>favorito de hoje?</em></h2>
+            </div>
+            <p>
+              Dos clássicos que abraçam aos sabores que surpreendem. Encontre
+              seu próximo amor em forma de sorvete.
+            </p>
+          </div>
+          <div class="filter-row" role="group" aria-label="Filtrar sabores">
+            <button class="filter-chip is-active" data-filter="todos">
+              Todos os sabores
+            </button>
+            <button class="filter-chip" data-filter="frutados">Frutados</button>
+            <button class="filter-chip" data-filter="cremosos">Cremosos</button>
+            <button class="filter-chip" data-filter="especiais">
+              Especiais
+            </button>
+          </div>
+          <div id="flavor-grid" class="flavor-grid">
+            <article class="flavor-card" data-category="frutados">
+              <div class="flavor-image">
+                <img
+                  src="https://images.unsplash.com/photo-1618485476408-4aca780ba55c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="Sorvete de morango"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.src =
+                      'https://images.unsplash.com/photo-1501446529957-6226bd447c46?auto=format&fit=crop&w=900&q=85';
+                  "
+                /><span class="flavor-tag">Frutado</span
+                ><button
+                  class="quick-add"
+                  data-add="Morango"
+                  aria-label="Adicionar sorvete de morango"
+                >
+                  +
+                </button>
+              </div>
+              <div class="flavor-info">
+                <div>
+                  <h3>Morango de verdade</h3>
+                  <p>Doce, leve e cheio de fruta.</p>
+                </div>
+                <strong>R$ 9,00</strong>
+              </div>
+            </article>
+            <article class="flavor-card" data-category="cremosos">
+              <div class="flavor-image">
+                <img
+                  src="https://images.unsplash.com/photo-1597648152428-f883fbc9c873?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="Sorvete cremoso de chocolate"
+                  loading="lazy"
+                /><span class="flavor-tag">Cremoso</span
+                ><button
+                  class="quick-add"
+                  data-add="Chocolate"
+                  aria-label="Adicionar sorvete de chocolate"
+                >
+                  +
+                </button>
+              </div>
+              <div class="flavor-info">
+                <div>
+                  <h3>Chocolate intenso</h3>
+                  <p>Cacau marcante e textura aveludada.</p>
+                </div>
+                <strong>R$ 10,00</strong>
+              </div>
+            </article>
+            <article class="flavor-card" data-category="especiais">
+              <div class="flavor-image">
+                <img
+                  src="https://images.unsplash.com/photo-1603736029103-dafad0eb0906?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="Sorvete artesanal com cobertura"
+                  loading="lazy"
+                /><span class="flavor-tag">Especial</span
+                ><button
+                  class="quick-add"
+                  data-add="Pistache"
+                  aria-label="Adicionar sorvete de pistache"
+                >
+                  +
+                </button>
+              </div>
+              <div class="flavor-info">
+                <div>
+                  <h3>Pistache dos sonhos</h3>
+                  <p>Notas tostadas, sabor sofisticado.</p>
+                </div>
+                <strong>R$ 12,00</strong>
+              </div>
+            </article>
+            <article class="flavor-card" data-category="cremosos">
+              <div class="flavor-image">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1675279010961-8a6679ff03da?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="Milkshake cremoso"
+                  loading="lazy"
+                /><span class="flavor-tag">Cremoso</span
+                ><button
+                  class="quick-add"
+                  data-add="Baunilha"
+                  aria-label="Adicionar sorvete de baunilha"
+                >
+                  +
+                </button>
+              </div>
+              <div class="flavor-info">
+                <div>
+                  <h3>Baunilha delicada</h3>
+                  <p>Clássico, suave e irresistível.</p>
+                </div>
+                <strong>R$ 9,00</strong>
+              </div>
+            </article>
+            <article class="flavor-card" data-category="frutados">
+              <div class="flavor-image">
+                <img
+                  src="https://images.unsplash.com/photo-1627222295124-f8b3fc09e47f?q=80&w=682&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="Sorvete de frutas vermelhas"
+                  loading="lazy"
+                  onerror="
+                    this.onerror = null;
+                    this.src =
+                      'https://images.unsplash.com/photo-1627222295124-f8b3fc09e47f?q=80&w=682&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D';
+                  "
+                /><span class="flavor-tag">Frutado</span
+                ><button
+                  class="quick-add"
+                  data-add="Frutas vermelhas"
+                  aria-label="Adicionar sorvete de frutas vermelhas"
+                >
+                  +
+                </button>
+              </div>
+              <div class="flavor-info">
+                <div>
+                  <h3>Frutas vermelhas</h3>
+                  <p>Um toque cítrico e refrescante.</p>
+                </div>
+                <strong>R$ 10,00</strong>
+              </div>
+            </article>
+            <article class="flavor-card" data-category="especiais">
+              <div class="flavor-image">
+                <img
+                  src="https://images.unsplash.com/photo-1715194803865-54f4358f87ef?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                  alt="Casquinha artesanal com sorvete"
+                  loading="lazy"
+                /><span class="flavor-tag">Especial</span
+                ><button
+                  class="quick-add"
+                  data-add="Casquinha especial"
+                  aria-label="Adicionar casquinha especial"
+                >
+                  +
+                </button>
+              </div>
+              <div class="flavor-info">
+                <div>
+                  <h3>Casquinha da casa</h3>
+                  <p>Crocância por fora, felicidade por dentro.</p>
+                </div>
+                <strong>R$ 11,00</strong>
+              </div>
+            </article>
+          </div>
+          <p class="menu-note">
+            * Sabores e valores ilustrativos — personalize conforme o cardápio
+            real da loja.
+          </p>
+        </div>
+      </section>
+
+      <section class="quote-band">
+        <div class="container quote-inner">
+          <span class="quote-mark">“</span>
+          <p>
+            Tem dias que pedem grandes planos.<br /><em
+              >Outros só pedem sorvete.</em
+            >
+          </p>
+          <span class="quote-doodle">✳</span>
+        </div>
+      </section>
+
+      <section id="experiencia" class="experience-section section-pad">
+        <div class="container experience-grid">
+          <div class="experience-photo">
+            <img
+              src="http://images.unsplash.com/photo-1622090860720-c4a77e146284?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+              alt="Milkshake servido com sorvete"
+              loading="lazy"
+            />
+            <div class="photo-caption">
+              <span>01 / 03</span
+              ><strong>Um carinho em forma de sobremesa.</strong>
+            </div>
+          </div>
+          <div class="experience-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> MAIS QUE SORVETE
+            </p>
+            <h2>Pequenos momentos.<br /><em>Grandes memórias.</em></h2>
+            <p>
+              A Gelô nasceu da ideia de que as coisas simples também podem ser
+              extraordinárias. Por isso, cada sabor é um convite para
+              desacelerar, dividir uma risada e aproveitar o agora.
+            </p>
+            <div class="values-list">
+              <div>
+                <span>✳</span>
+                <p>
+                  <strong>Sabor que surpreende</strong><br />Combinações
+                  pensadas para dar vontade de voltar.
+                </p>
+              </div>
+              <div>
+                <span>♡</span>
+                <p>
+                  <strong>Feito para todo mundo</strong><br />Uma pausa gostosa
+                  em qualquer parte do seu dia.
+                </p>
+              </div>
+              <div>
+                <span>☼</span>
+                <p>
+                  <strong>Momentos de verdade</strong><br />Porque felicidade
+                  também cabe numa casquinha.
+                </p>
+              </div>
+            </div>
+            <a class="button button-outline" href="#sabores"
+              >Encontrar meu sabor <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="container gallery-top">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> UM OLHAR MAIS DOCE
+            </p>
+            <h2>Feito para dar<br /><em>água na boca.</em></h2>
+          </div>
+          <p>
+            Escolha sua combinação, chame quem você gosta e transforme qualquer
+            dia em uma ocasião.
+          </p>
+        </div>
+        <div class="gallery-grid container">
+          <img
+            src="https://images.unsplash.com/photo-1586917049360-368e453444ab?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt="Taça de sorvete com cobertura"
+            loading="lazy"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1625234969503-49c7f28bc6ec?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt="Sorvete servido em casquinha"
+            loading="lazy"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+            alt="Milkshake de sorvete"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section id="visite" class="visit-section section-pad">
+        <div class="container visit-card">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> SEU PRÓXIMO MOMENTO FAVORITO
+            </p>
+            <h2>Vamos deixar o dia<br /><em>mais gostoso?</em></h2>
+            <p>
+              Escolha seus sabores e envie seu pedido pelo WhatsApp. A gente
+              combina os detalhes com você.
+            </p>
+            <a
+              id="whatsapp-cta"
+              href="#"
+              class="button button-light"
+              target="_blank"
+              rel="noopener"
+              >Pedir pelo WhatsApp <span>↗</span></a
+            >
+          </div>
+          <div class="visit-art">
+            <img
+              src="https://images.unsplash.com/photo-1560008581-09826d1de69e?auto=format&fit=crop&w=1000&q=88"
+              alt="Casquinha de sorvete artesanal"
+              loading="lazy"
+            /><span class="visit-bubble"
+              >vai um<br /><strong>sorvetin?</strong> 🍦</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-main">
+        <a class="brand footer-brand" href="#inicio"
+          ><span class="brand-mark">g<span>•</span></span
+          ><span>gelô<span class="brand-period">.</span></span></a
+        >
+        <p>Um momento mais doce, uma colherada de cada vez.</p>
+        <nav aria-label="Links do rodapé">
+          <a href="#sabores">Sabores</a><a href="#experiencia">Nossa essência</a
+          ><a href="#visite">Contato</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Gelô Sorveteria.</span
+        ><span>Feito com carinho e uma vontade enorme de sorvete. ✳</span>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <button id="cart-button" class="cart-button" aria-label="Ver pedido">
+      Pedido <span id="cart-count">0</span> ·
+      <span id="cart-total">R$ 0,00</span>
+    </button>
+    <dialog id="order-dialog" class="order-dialog">
+      <form method="dialog" class="dialog-top">
+        <div>
+          <p class="eyebrow">SEU PEDIDO</p>
+          <h2>Quase na hora de aproveitar.</h2>
+        </div>
+        <button class="dialog-close" aria-label="Fechar">×</button>
+      </form>
+      <div id="order-items" class="order-items"></div>
+      <div class="dialog-footer">
+        <div class="dialog-total">
+          <span>Total</span><strong id="dialog-total">R$ 0,00</strong>
+        </div>
+        <label for="customer-name">Seu nome</label
+        ><input
+          id="customer-name"
+          placeholder="Como podemos te chamar?"
+        /><label for="order-note">Alguma observação? (opcional)</label
+        ><textarea
+          id="order-note"
+          rows="2"
+          placeholder="Ex.: retirar na loja, sem cobertura..."
+        ></textarea
+        ><button id="send-order" class="button button-dark full-button">
+          Continuar pelo WhatsApp ↗
+        </button>
+        <p class="menu-note">
+          O pedido será enviado para confirmação pelo WhatsApp.
+        </p>
+      </div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
